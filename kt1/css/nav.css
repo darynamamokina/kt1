@@ -1,0 +1,70 @@
+#nav-background {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    opacity: 0.95;
+}
+
+#nav-logo {
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+#nav-container {
+    position: relative;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    width: 80%;
+}
+
+#section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-container > div {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 25px;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(194, 194, 194);
+}
+
+#section-container > div:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+#section-container > div:not(hover) {
+    color: rgb(194, 194, 194);
+    transition: 0.5s;
+}
+
+.dropdown-item {
+    text-transform: none;
+}
+
+#burger-icon {
+    display: none;
+}
+
+#burger-icon > img {
+    margin: 0;
+    width: 50px;
+    filter: invert(1);
+}
